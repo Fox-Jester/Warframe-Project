@@ -14,7 +14,9 @@ function SearchContent(){
     const [deleteMode, setDeleteMode] = useState(false);
     const [cardDelete, setCardDelete] = useState(0)
 
-    
+    useEffect(() => {
+        console.log("cards deleted: " + cardDelete)
+    },[cardDelete])
 
     const counterRef = useRef(0);
     const notifCounterRef = useRef(0);

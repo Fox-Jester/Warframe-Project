@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import btnPress from "./assets/audio/btn-press.mp3"
 
 interface StockpileFilterProps{
@@ -12,7 +12,7 @@ function StockpileFilter({retrieveFilter}: StockpileFilterProps){
 
     
 
-    function handleClick(e: React.MouseEvent, id: string){
+    function handleClick( id: string){
 
         const currentActive = document.querySelector(".filter-slide.active");
         const target = document.querySelector(`#${id}`);
@@ -42,11 +42,11 @@ function StockpileFilter({retrieveFilter}: StockpileFilterProps){
 
     return(
         <div  id="type-filter">
-        <div id="filter-all" onClick={(e) => handleClick(e, "filter-all")} className="filter-slide active"><p>All</p></div>
-        <div id="filter-prime" onClick={(e) => handleClick(e, "filter-prime")} className="filter-slide"><p>Primes</p></div>
-        <div id="filter-mod" onClick={(e) => handleClick(e, "filter-mod")} className="filter-slide"><p>Mods</p></div>
-        <div id="filter-arcane" onClick={(e) => handleClick(e, "filter-arcane")} className="filter-slide"><p>Arcanes</p></div>
-        <div id="filter-riven" onClick={(e) => handleClick(e, "filter-riven")} className="filter-slide"><p>Rivens</p></div>
+        <div id="filter-all" onClick={() => handleClick("filter-all")} className="filter-slide active"><p>All</p></div>
+        <div id="filter-prime" onClick={() => handleClick("filter-prime")} className="filter-slide"><p>Primes</p></div>
+        <div id="filter-mod" onClick={() => handleClick("filter-mod")} className="filter-slide"><p>Mods</p></div>
+        <div id="filter-arcane" onClick={() => handleClick("filter-arcane")} className="filter-slide"><p>Arcanes</p></div>
+        <div id="filter-riven" onClick={() => handleClick("filter-riven")} className="filter-slide"><p>Rivens</p></div>
        
            
         

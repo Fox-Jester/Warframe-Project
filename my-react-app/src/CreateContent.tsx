@@ -30,8 +30,7 @@ function CreateContent(){
 
         const stockArray = JSON.parse(localStorage.getItem("stockArrayData")!);
         nameArrayRef.current = stockArray.map((stock:stock) => stock.name.toLowerCase())
-        console.log(nameArrayRef.current);
-        
+      
     }
 
    

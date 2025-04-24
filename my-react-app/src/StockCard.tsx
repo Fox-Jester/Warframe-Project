@@ -1,5 +1,5 @@
 
-import {  useEffect, useState, useContext } from "react";
+import {  useEffect, useState} from "react";
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faPlus, faMinus} from "@fortawesome/free-solid-svg-icons"
@@ -28,7 +28,7 @@ interface StockCardProps{
 
 
 
-function StockCard({type, name, editable = false, plat = 0, sets = 0, retrieveValues, id, searchAble = false}: StockCardProps){
+function StockCard({type, name, editable = false, plat = 0, sets = 0, retrieveValues, id}: StockCardProps){
 
     
    

@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faX} from "@fortawesome/free-solid-svg-icons"
 
 import search from "./assets/audio/search.mp3"
-import btnPress from "./assets/audio/btn-press.mp3"
+
 
 
 
